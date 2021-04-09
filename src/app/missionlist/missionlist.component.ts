@@ -6,6 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./missionlist.component.css']
 })
 export class MissionlistComponent implements OnInit {
+
   constructor() { }
 
   ngOnInit(): void {
