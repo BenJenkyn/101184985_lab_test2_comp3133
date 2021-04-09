@@ -1,1 +1,8 @@
-<p>missiondetails works!</p>
+<h1>Mission Details</h1>
+
+<ul>
+  <li *ngFor="let mission of missions" >
+    {{mission.mission_name}} || {{mission.launch_year}}  || {{mission.details}} || {{mission.mission_patch_small}}
+  </li>
+</ul>
+

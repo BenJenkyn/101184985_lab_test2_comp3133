@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SpacexapiService } from '../network/spacexapi.service';
 
 @Component({
   selector: 'app-missiondetails',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MissiondetailsComponent implements OnInit {
 
-  constructor() { }
+  missions: any
+
+  constructor(private spacexApiService: SpacexapiService) {
+
+  }
 
   ngOnInit(): void {
+    this.spacexApiService.sendGetRequest().subscribe(data=>{
+      this.missions = data
+    })
   }
 
 }
