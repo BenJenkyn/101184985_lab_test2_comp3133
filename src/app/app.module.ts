@@ -6,14 +6,12 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MissionlistComponent } from './missionlist/missionlist.component';
 import { MissiondetailsComponent } from './missiondetails/missiondetails.component';
-import { MissionListComponent } from './mission-list/mission-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MissionlistComponent,
     MissiondetailsComponent,
-    MissionListComponent
   ],
   imports: [
     BrowserModule,
