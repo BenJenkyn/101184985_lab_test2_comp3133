@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./missiondetails.component.css']
 })
 export class MissiondetailsComponent implements OnInit {
-  @Input('currentMission') mission: any
+  @Input() mission: any
 
   constructor() {
 
