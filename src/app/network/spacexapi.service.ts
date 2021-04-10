@@ -11,6 +11,8 @@ export class SpacexapiService {
 
   private REST_API_SERVER = "https://api.spacexdata.com/v3/launches"
 
+  //shared: any
+
   constructor(private httpClient: HttpClient) {}
 
   public sendGetRequest(){

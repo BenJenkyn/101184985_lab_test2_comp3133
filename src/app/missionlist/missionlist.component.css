@@ -3,8 +3,6 @@
   border-style: solid;
   border-color: black;
   margin: 10px;
-  height: 200px;
-  width: 400px;
 }
 .rocket-card:hover{
   background-color: rgb(34, 109, 179);

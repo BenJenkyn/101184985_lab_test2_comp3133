@@ -1,1 +1,25 @@
-<h1>test {{mission.details}}</h1>
+<h1>Mission details</h1>
+<mat-card>
+  <img mat-card-md-image src="{{ mission.links.mission_patch }}" />
+  <mat-card-title> Mission {{ mission.mission_name }} </mat-card-title>
+  <mat-card-content>
+    Mission: {{ mission.mission_name }}<br />
+    launch_year: {{ mission.launch_year }}
+  </mat-card-content>
+  <mat-card-title> Rocket </mat-card-title>
+  <mat-card-content>
+    Name: {{ mission.rocket.rocket_name }}<br />
+    type: {{ mission.rocket.rocket_type }}
+  </mat-card-content>
+  <mat-card-title>
+    Launch Site
+  </mat-card-title>
+  <mat-card-content>
+    {{mission.launch_site.site_name}}
+  </mat-card-content>
+  <mat-card-title> Launch Details </mat-card-title>
+  <mat-card-content>
+    {{ mission.details }}
+  </mat-card-content>
+</mat-card>
+<router-outlet></router-outlet>
