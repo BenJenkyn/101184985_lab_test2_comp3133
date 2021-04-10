@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { SpacexapiService } from '../network/spacexapi.service';
-
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-missiondetails',
@@ -8,17 +6,14 @@ import { SpacexapiService } from '../network/spacexapi.service';
   styleUrls: ['./missiondetails.component.css']
 })
 export class MissiondetailsComponent implements OnInit {
+  @Input('currentMission') mission: any
 
-  missions: any
-
-  constructor(private spacexApiService: SpacexapiService) {
+  constructor() {
 
   }
 
   ngOnInit(): void {
-    this.spacexApiService.sendGetRequest().subscribe(data=>{
-      this.missions = data
-    })
+
   }
 
 }

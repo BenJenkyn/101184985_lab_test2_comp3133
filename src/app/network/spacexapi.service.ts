@@ -17,10 +17,6 @@ export class SpacexapiService {
     return this.httpClient.get(this.REST_API_SERVER).pipe(retry(3), catchError(this.handleError))
   }
 
-  // public sendGetRequestByID(){
-  //   const options = {params: new HttpParams({fromString: "page"})}
-  // }
-
   handleError(error: HttpErrorResponse){
     let errorMessage = "Unkown error!";
     if(error.error instanceof ErrorEvent){

@@ -9,6 +9,7 @@ import { MissiondetailsComponent } from './missiondetails/missiondetails.compone
 import { HttpClientModule } from '@angular/common/http'
 import { SpacexapiService } from './network/spacexapi.service';
 import { MatCardModule } from '@angular/material/card'
+import { MatButtonModule } from '@angular/material/button'
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MatCardModule } from '@angular/material/card'
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [SpacexapiService],
   bootstrap: [AppComponent]
