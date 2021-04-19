@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import {ActivatedRoute} from '@angular/router';
 import { SpacexapiService } from '../network/spacexapi.service';
 
 
@@ -26,12 +26,12 @@ export class MissionlistComponent implements OnInit {
   }
 
   public onClick(mission: any){
-    if(!this.isMission){
-      this.isMission = true
-    }
-    else{
+    if(this.isMission && this.currentMission == mission){
       this.isMission = false
     }
-    this.currentMission = mission
+    else{
+      this.isMission = true
+      this.currentMission = mission
+    }
   }
 }

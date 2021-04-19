@@ -4,3 +4,9 @@
   border-color: black;
   border-radius: 15px;
 }
+.card-header{
+  border-bottom-style: double;
+  border-bottom-width: 5px;
+  margin-bottom: 15px;
+}
+

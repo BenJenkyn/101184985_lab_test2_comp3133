@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http'
 import { SpacexapiService } from './network/spacexapi.service';
 import { MatCardModule } from '@angular/material/card'
 import { MatButtonModule } from '@angular/material/button'
+import {MatIconModule} from '@angular/material/icon'
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MatButtonModule } from '@angular/material/button'
     BrowserAnimationsModule,
     HttpClientModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [SpacexapiService],
   bootstrap: [AppComponent]
